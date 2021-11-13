@@ -25,16 +25,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
        // icon_image = findViewById(R.id.icon_image_id);
-        linear_layout = findViewById(R.id.linear_layout_id);
+        //linear_layout = findViewById(R.id.linear_layout_id);
         login = findViewById(R.id.log_in_id);
         register = findViewById(R.id.register_id);
 
-        linear_layout.animate().alpha(0f).setDuration(1);
+//        linear_layout.animate().alpha(0f).setDuration(1);
 
-        TranslateAnimation animation = new TranslateAnimation(0, 0, 0, -1000);
+        /*TranslateAnimation animation = new TranslateAnimation(0, 0, 0, -1000);
         animation.setDuration(1000);
         animation.setFillAfter(false);
-        animation.setAnimationListener(new MyAnimationListener());
+        animation.setAnimationListener(new MyAnimationListener());*/
 //        icon_image.setAnimation(animation);
     }
 

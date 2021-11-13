@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.instagram.Fragments.Home_Fragment;
+import com.example.instagram.Fragments.Profile_Fragment;
 import com.example.instagram.Model.User;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -115,7 +117,9 @@ public class EditrofileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 update_profile();
+                Toast.makeText(EditrofileActivity.this, "Profile Updated..", Toast.LENGTH_LONG).show();
             }
+
         });
 
     }

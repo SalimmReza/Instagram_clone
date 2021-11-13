@@ -9,7 +9,9 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:id="@+id/n_bar_id"
+
         android:background="@color/white">
 
         <androidx.appcompat.widget.Toolbar

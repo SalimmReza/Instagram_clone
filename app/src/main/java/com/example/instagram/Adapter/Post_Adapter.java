@@ -298,7 +298,7 @@ public class Post_Adapter extends RecyclerView.Adapter<Post_Adapter.ViewHolde>{
                 .child(postId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot datasnapshot) {
-                textt.setText(datasnapshot.getChildrenCount() + "likes");
+                textt.setText(datasnapshot.getChildrenCount() + " Likes");
 
             }
 
