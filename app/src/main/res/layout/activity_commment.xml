@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommmentActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/c_toollbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/windowBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/c_recycler_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/c_bottom_id"
+        android:layout_below="@id/c_toollbar_id" />
+
+    <RelativeLayout
+        android:id="@+id/c_bottom_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="6dp"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/c_image_profile_id"
+            android:layout_width="40dp"
+            app:civ_border_width="3dp"
+            android:layout_height="40dp"
+
+            />
+
+        <EditText
+            android:id="@+id/c_add_comment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/c_post_id"
+            android:layout_toRightOf="@id/c_image_profile_id"
+            android:background="@android:color/transparent"
+            android:hint="Comment...."
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/c_post_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:text="Post"
+            android:textColor="#F10303"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

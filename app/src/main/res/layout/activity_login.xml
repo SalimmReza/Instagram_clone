@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/unnamed" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/login_email_id"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/login_pasword_id"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:foregroundGravity="center"
+
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/login_id"
+        android:onClick="login"
+
+        android:backgroundTint="#565c5a"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have account? Register"
+        android:textSize="10dp"
+        android:onClick="DnthaveAccount"
+        android:id="@+id/dnt_have_account_id"
+
+        />
+
+
+
+
+</LinearLayout>
