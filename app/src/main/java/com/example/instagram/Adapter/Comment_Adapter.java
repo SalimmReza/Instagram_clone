@@ -39,6 +39,9 @@ public class Comment_Adapter extends RecyclerView.Adapter<Comment_Adapter.ViewHo
     private Context m_context;
     private List<Comment_c> m_comment;
 
+
+    ////////////////
+
     String postId;
 
     private FirebaseUser f_user;
